@@ -13,4 +13,5 @@ public interface IUserClient {
 
     @GetMapping("/user/{id}")
     User findById(@PathVariable("id") Integer id);
+
 }
