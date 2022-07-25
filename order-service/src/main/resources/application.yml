@@ -7,6 +7,7 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
+  # 给服务取名
   application:
     name: orderservice
 
@@ -19,6 +20,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:10086/eureka
+    # 打开eureka客户端，不再用注解形式
+    enabled: true
 
 logging:
   level:
