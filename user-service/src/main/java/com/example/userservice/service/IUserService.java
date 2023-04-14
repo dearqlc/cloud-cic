@@ -7,6 +7,6 @@ import com.example.userservice.entity.User;
  */
 public interface IUserService {
 
-     User queryById(Integer id);
+    User queryById(Integer id);
 
 }
