@@ -1,0 +1,21 @@
+server:
+  port: 10086
+
+spring:
+  application:
+    name: eurekaserver
+
+eureka:
+  instance:
+    hostname: 127.0.0.1 # 服务所在主机（一般都是配置域名；本地测试的话，需要在 host 文件中指定虚拟域名
+  client:
+    fetch-registry: false
+    register-with-eureka: false    # 由于该应用为注册中心,所以设置为false,代表不向注册中心注册自己
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+
+logging:
+  level:
+    com.example: debug
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
